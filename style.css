@@ -1,0 +1,166 @@
+/* COLOR PALETTE */
+:root {
+  --white: #f0f8ff;
+  --cream: #e9c1af;
+  --blue: #1f3e59;
+  --dark-blue: #1a3246;
+  --green: #478647;
+  --dark-green: #337433;
+  --red: #d05050;
+  --dark-red: #be3e3e;
+  --burly-wood: #deb887;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+/* Adding books form */
+
+#side-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding-top: 30px;
+  background-color: var(--burly-wood);
+}
+
+.input-box {
+  position: relative;
+  margin: 17px 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+/* 'ADD BOOK' BUTTON STYLE */
+#add-book {
+  width: 200px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: 0.3s;
+}
+
+#add-book:hover {
+  cursor: pointer;
+  border-color: var(--dark-blue);
+  background-color: var(--dark-blue);
+  transition: 0.3s;
+}
+
+/* Library Information Styling */
+
+#library-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 360px);
+  padding: 30px;
+}
+
+#stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 70%;
+  margin-bottom: 30px;
+  padding: 0 25px;
+  font-size: 18px;
+  background-color: var(--cream);
+}
+
+/* TABLE STYLE */
+th,
+td {
+  padding: 10px 30px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: silver;
+}
+
+#table-heading {
+  background-color: darkblue;
+  color: wheat;
+}
+
+#books-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-collapse: collapse;
+}
+#books-list td {
+  padding: 25px;
+}
+#book-requirements {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.book-info {
+  border-bottom: 2px dotted var(--blue);
+}
+
+.book-info i {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.book-info i:hover,
+.close-modal:hover,
+.cancel-removal:hover {
+  cursor: pointer;
+}
+
+.fa-check {
+  color: var(--green);
+  transition: 0.3s;
+}
+
+.fa-check:hover {
+  color: var(--dark-green);
+}
+
+.fa-times,
+.fa-trash-alt {
+  color: var(--red);
+  transition: 0.3s;
+}
+
+.fa-times:hover,
+.fa-trash-alt:hover {
+  color: var(--dark-red);
+}
+
+/* Footer Styling */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: azure;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.fa-github {
+  font-size: 20;
+  transition: transform 0.3 ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}

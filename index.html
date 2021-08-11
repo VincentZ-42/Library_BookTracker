@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel='stylesheet' href='style.css' />
+    <link rel="icon" href="github-icon.png" />
+    <script src="http://kit.fontawesome.com/9cc33f034d.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+
+    <div id="side-form">
+
+      <h1>Add to Library</h1>
+
+      <form>
+        <div class='input-box'>
+          <label>Title: </label>
+          <input id="title" type="text">
+        </div>
+
+        <div class='input-box'>
+          <label>Author: </label>
+          <input id="author" type="text">
+        </div>
+
+        <div class='input-box'>
+          <label>Pages: </label>
+          <input id="pages" type="number">
+        </div>
+
+        <div class="checkbox">
+          <label>Have you read this already?</label>
+          <input type="checkbox" id="checkbox" autocomplete="off">
+        </div>
+
+        <input type="button" id="add-book" value="Add Book">
+      </form>
+    </div>
+
+    <main id="library-content">
+
+      <div id="stats-container">
+        <h2>Library Info:</h2>
+        <p>Books Read: <span id="books-read"></span></p>
+        <p>Total Books: <span id="books-total"></span></p>
+        <button id="clearAll">Clear Library</button>
+      </div>
+      
+      <table id="book-list">
+        <thread id="book-requirements">
+          <tr id="table-heading">
+            <td>Title</td>
+            <td>Author</td>
+            <td>Pages</td>
+            <td>Status</td>
+            <td>Delete</td>
+          </tr>
+        </thread>
+        <tbody id="table-body">
+          <!-- List of Books Shown Here -->
+        </tbody>
+      </table>
+
+    </main>
+
+    <footer class="footer">
+      Copyright &copy 2021
+      <a class="footer-link" href="https://github.com/VincentZ-42" target="_blank">Vincent Zhao</a> | Code: 
+      <a href="https://github.com/VincentZ-42/Library_BookTracker" target="_blank">
+          <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    
+  </body>
+</html>

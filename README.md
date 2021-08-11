@@ -6,6 +6,7 @@
 ## Objectives
 -  Implement library to track read and unread books using HTML, CSS, n JavaScript
 -  Learn to use LocalStorage to store data input from User
+-  Learn to incoporate fontawesome icons into webpages
 
 ## Thoughts
 - This was more challenging than I had anticipated. I struggled mostly with customizing the display of all the elements in CSS and organizaing everything in HTML. 

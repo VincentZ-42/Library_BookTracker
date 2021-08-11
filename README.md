@@ -8,4 +8,5 @@
 -  Learn to use LocalStorage to store data input from User
 
 ## References
-
+- https://github.com/mooniiDev/library
+- fontawesome.com

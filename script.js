@@ -6,18 +6,43 @@ const bookList = document.querySelector('#table-body');
 const form = document.querySelector('form');
 let myLibrary = [];
 
-function Book(title, author, pages, status) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.status = status;
+// Using Class
+class Book {
+  constructor(title, author, pages, status) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.status = status;
+  }
+
+  // getter functions
+  getTitle() { return this.title };
+  getAuthor() { return this.author };
+  getPages() { return this.pages };
+  getStatus() { return this.status };
+
+  // setter functions
+  setTitle(newTitle) { this.title = newTitle };
+  setAuthor(newAuthor) { this.author = newAuthor };
+  setPages(newPages) { this.pages = newPages };
+  setStatus(newStatus) { this.status = newStatus };
+
 }
+
+
+// Using Function Constructors
+// function Book(title, author, pages, status) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.status = status;
+// }
 
 // Shows number of books in Library
 function showStats() {
   let readCount = 0;
   myLibrary.forEach(book => {
-    if (book.status === true) {
+    if (book.getStatus === true) {
       readCount += 1;
     }
   });
